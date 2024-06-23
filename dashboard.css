@@ -1,0 +1,58 @@
+/* Apply background image to the content area */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Fallback color */
+}
+
+.content {
+    margin-left: 250px; /* Adjust for the width of the sidebar */
+    padding: 20px;
+    background-image: url('dashboard1.jpg'); /* Specify the background image URL */
+    background-size: cover; /* Cover the entire content area */
+    background-position: center; /* Center the background image */
+    /* Added background-repeat property to ensure image is not repeated */
+    background-repeat: no-repeat;
+}
+
+/* Sidebar CSS */
+.sidebar {
+    width: 250px; /* Adjust the width as needed */
+    height: 100%; /* Make the sidebar full height */
+    position: fixed; /* Keep the sidebar fixed */
+    top: 0; /* Align the sidebar to the top */
+    left: 0; /* Align the sidebar to the left */
+    background-color: #aa1e52;
+    padding: 20px;
+}
+
+/* Multicolor button styles */
+.multicolor-btn {
+    width: 100%;
+    padding: 30px;
+    color: #8c3e0e;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+/* Multicolor button hover effect */
+.multicolor-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Add scaling effect on hover */
+}
+
+/* Logout button */
+.logout button {
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px); /* Adjust for padding */
+    text-align: center;
+}
+
+/* Content section CSS */
+.content-section {
+    display: none; /* Hide content sections by default */
+}

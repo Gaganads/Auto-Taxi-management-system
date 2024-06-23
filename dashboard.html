@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <h1>Admin Dashboard</h1>
+        <div class="section" onclick="showContent('userManagement')">
+            <button class="multicolor-btn">User Management</button>
+        </div>
+        <div class="section" onclick="showContent('vehicleManagement')">
+            <button class="multicolor-btn">Vehicle Management</button>
+        </div>
+        <div class="section" onclick="showContent('rideManagement')">
+            <button class="multicolor-btn">Ride Management</button>
+        </div>
+        <div class="section" onclick="showContent('driverManagement')">
+            <button class="multicolor-btn">Driver Management</button>
+        </div>
+        <!-- Logout button moved to the bottom -->
+        <div class="section">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Main content will be displayed here -->
+        <div id="userManagement" class="content-section">
+            <ul class="button-grid">
+                <li><button class="multicolor-btn" onclick="window.location.href = 'fetch_customer.php';">View Customer Details</button></li>
+                <li><button class="multicolor-btn" onclick="window.location.href = 'fetch_feedback.php';">View Feedback</button></li>
+            </ul>
+        </div>
+        <div id="vehicleManagement" class="content-section">
+            <ul class="button-grid">
+                <li><button class="multicolor-btn" onclick="window.location.href = 'add_vehical.html';">Add Vehicle</button></li>
+                <li><button class="multicolor-btn" onclick="window.location.href = 'fetch_vehical.php';">View Vehicles</button></li>
+            </ul>
+        </div>
+        <div id="rideManagement" class="content-section">
+            <ul class="button-grid">
+                <li><button class="multicolor-btn" onclick="window.location.href = 'fetch_customer.php';">View Bookings</button></li>
+                <li><button class="multicolor-btn" onclick="window.location.href = 'fetch_ride.php';">View Ride History</button></li>
+                <li><button class="multicolor-btn" onclick="window.location.href = 'ride_vehical.html';">Add Ride details</button></li>
+            </ul>
+        </div>
+        <div id="driverManagement" class="content-section">
+            <ul class="button-grid">
+                <li><button class="multicolor-btn" onclick="window.location.href = 'add_driver.html';">Add Driver</button></li>
+                <li><button class="multicolor-btn" onclick="window.location.href = 'fetch_driver.php';">View Drivers</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function showContent(sectionId) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        
+        function logout() {
+            window.location.href = 'index.html'; // Redirect to admin.html
+        }
+    </script>
+</body>
+</html>

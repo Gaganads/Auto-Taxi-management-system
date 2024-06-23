@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.vehicle {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.vehicle h3 {
+    margin-bottom: 5px;
+}
+
+.vehicle p {
+    margin: 5px 0;
+}
+
+.no-results {
+    color: red;
+    font-weight: bold;
+}

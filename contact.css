@@ -1,0 +1,105 @@
+/* CSS for contact form */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    color: #d9dde2;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px; /* Increase font size for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width */
+}
+
+textarea {
+    height: 150px; /* Adjust the height as needed */
+}
+
+button[type="submit"] {
+    background-color: #dfe1e2;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #00b33c;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.about-section {
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.about-section:nth-child(odd) {
+    background-color: #e9e9e9; /* Set background color for odd-numbered sections */
+}
+
+.about-section:nth-child(even) {
+    background-color: #c24904; /* Set background color for even-numbered sections */
+}
+
+.about-section h2 {
+    color: #ff0000; /* Apply red color to the heading */
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}

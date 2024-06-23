@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto & Taxi Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Auto & Taxi Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="booking-form">
+    <div class="container">
+        <h2>Book a Ride</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+             <label for="vehical">Choose a mode:</label>
+
+            <select id="vehical" name="vehical" >
+                <option value="#">Select a mode</option>
+                <option value="auto">Auto</option>
+                <option value="taxi">Taxi</option>
+            </select>
+            <label for="pickup_location">Pickup Location:</label>
+            <input type="text" id="pickup_location" name="pickup_location" required>
+            
+            <label for="dropoff_location">Dropoff Location:</label>
+            <input type="text" id="dropoff_location" name="dropoff_location" required>
+            
+            <button type="submit">Book Now</button>
+            
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Designed by:Gagana Devraj</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
